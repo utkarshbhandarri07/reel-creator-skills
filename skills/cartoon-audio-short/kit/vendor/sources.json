@@ -1,0 +1,18 @@
+{
+  "toon.ts": {
+    "url": "https://raw.githubusercontent.com/mromidev/claude-animated-shorts/e3b817b6afc6cd413466d43f11ba31209e034bbf/templates/bridge/toon.ts",
+    "sha256": "ed6823daad4cc5cdb88a7215502af545fe621efc18d58ea175f7464cc02fd725"
+  },
+  "toon-LICENSE": {
+    "url": "https://raw.githubusercontent.com/mromidev/claude-animated-shorts/e3b817b6afc6cd413466d43f11ba31209e034bbf/LICENSE",
+    "sha256": "0c88b6c1afe23ba94a2326eb289868fa4bb24edfd6994ad0c6bb7f2f2ed517e2"
+  },
+  "three.module.js": {
+    "url": "https://raw.githubusercontent.com/mrdoob/three.js/r160/build/three.module.js",
+    "sha256": "76dea8151bc9352aef3528b4262e249b2604f62543828328db978d060d61a495"
+  },
+  "three-LICENSE": {
+    "url": "https://raw.githubusercontent.com/mrdoob/three.js/r160/LICENSE",
+    "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d"
+  }
+}

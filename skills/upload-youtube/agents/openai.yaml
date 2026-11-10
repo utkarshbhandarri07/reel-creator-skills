@@ -1,0 +1,6 @@
+interface:
+  display_name: "Upload YouTube"
+  short_description: "Upload and schedule YouTube videos through Chrome"
+  default_prompt: "Use $upload-youtube to upload my video through Chrome with a matching thumbnail, title, description, tags, and the requested visibility or schedule, without manual timestamp mapping."
+policy:
+  allow_implicit_invocation: true

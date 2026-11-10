@@ -1,0 +1,6 @@
+interface:
+  display_name: "Reel Cartoons"
+  short_description: "Voiceover-led cartoon reels rendered locally"
+  default_prompt: "Use $cartoon-audio-short to develop and animate an original narrated cartoon reel."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Upload Reel"
+  short_description: "Upload and publish Instagram Reels through Chrome"
+  default_prompt: "Use $upload-reel to upload my Instagram reel through Chrome with its matching cover, caption, and hashtags, preserving 9:16 framing and skipping timestamp mapping."
+policy:
+  allow_implicit_invocation: true

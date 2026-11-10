@@ -1,0 +1,33 @@
+# Secrets and machine-local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+.codex/
+
+# Local dependencies and caches
+.venv/
+venv/
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+.DS_Store
+Thumbs.db
+
+# Production outputs belong outside the skill bundle
+/projects/
+/Reels/
+**/out/
+**/frames/
+**/work/
+*.mp4
+*.mov
+*.mp3
+*.wav
+*.zip
+
+# Keep bundled example images, vendor files and license notices tracked.
