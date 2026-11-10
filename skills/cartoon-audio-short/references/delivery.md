@@ -12,7 +12,9 @@ Match the supplied narration text; preserve punctuation and technical notation. 
 
 ## Cover
 
-Generate a matching portrait 9:16 cover using the available imagegen skill and tool. Use an inspected representative frame as a style reference, a short topic title, one clear educational graphic, and the established palette and character design. Avoid claims that contradict the actual video length or content. Keep essential copy inset and readable at phone size. Inspect spelling, numbers, algorithm/scientific accuracy, arrows, character consistency and composition. Save the selected image to `out/Title-cover.png`; do not leave it only in the image generator's default folder. If unavailable, report the cover as incomplete without blocking delivery of the finished video. Do not set up or spend through a paid provider as a fallback.
+Generate a matching portrait 9:16 cover using the available imagegen skill and tool. Read [thumbnail-style.md](thumbnail-style.md) and inspect its bundled approved Selection Sort reference before generation. Supply that image as the primary style reference; a representative video frame may supply topic details but must not replace the approved cover design. Follow the reference for layout, typography, palette and teacher, adapting the title, central graphic and takeaway to the actual lesson. Inspect the final image at full size and thumbnail size for wording, numbers, arrows, character consistency and readability.
+
+Save the selected cover beside the video and copy it into the central Covers folder, using the version-preserving naming rules in thumbnail-style.md. Deliver both absolute paths. Do not leave the cover only in imagegen's default folder. If generation or the central copy is unavailable, disclose the specific missing deliverable without blocking the finished video. Do not set up or spend through a paid provider as a fallback.
 
 ## Posting caption and final files
 
