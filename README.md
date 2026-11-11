@@ -1,10 +1,11 @@
 # Reel Creator Skills
 
-Personal Codex skills for producing narrated cartoon shorts and publishing approved videos through connected Chrome.
+Personal Codex skills for producing animated videos and publishing approved videos through connected Chrome.
 
 | Skill | Purpose |
 | --- | --- |
 | `$cartoon-audio-short` — Reel Cartoons | Develop ideas/scripts or render voiceover-led cartoons locally. Finished videos use portrait 9:16, 1080×1920 at 30 fps, H.264/AAC, with captions, quiet background audio, a matching cover and posting caption by default. |
+| `$stickman-animation` | Create programmatic 2D stickman stories and explainers, including scene manifests, rendering pipelines, narration, and synchronized captions. |
 | `$upload-youtube` — Upload YouTube | Upload existing videos to YouTube Studio, add metadata and covers, and save or schedule a requested release. |
 | `$upload-reel` — Upload Reel | Upload or resume an Instagram Reel with portrait framing, a matching cover, caption and hashtags; publish or schedule as requested. |
 
@@ -17,18 +18,19 @@ For example, in PowerShell from this repository root:
 ```powershell
 $skillsHome = Join-Path $env:USERPROFILE '.codex\skills'
 New-Item -ItemType Directory -Path $skillsHome -Force | Out-Null
-foreach ($skillName in @('cartoon-audio-short', 'upload-youtube', 'upload-reel')) {
+foreach ($skillName in @('cartoon-audio-short', 'stickman-animation', 'upload-youtube', 'upload-reel')) {
     $targetPath = Join-Path $skillsHome $skillName
     if (Test-Path -LiteralPath $targetPath) { throw "Review existing skill before replacing: $targetPath" }
     Copy-Item -LiteralPath (Join-Path '.\skills' $skillName) -Destination $targetPath -Recurse
 }
 ```
 
-Confirm the skills appear in a subsequent Codex turn's skill catalog. Explicit invocation uses the names shown above; automatic selection is enabled in their UI metadata.
+Confirm the skills appear in a subsequent Codex turn's skill catalog. Explicit invocation uses the names shown above; automatic selection is enabled by default.
 
 ## Prerequisites and use
 
 - **Reel Cartoons:** native Python 3.12+, Node with `module.stripTypeScriptTypes` (Node 24 recommended), npm, FFmpeg and FFprobe. Project setup installs pinned Python dependencies and Playwright/Chromium locally; setup downloads require network access. Create production projects outside the installed skill. Read its production reference before running the kit.
+- **Stickman animation:** the skill describes a data-driven workflow; rendering tools, audio assets and any selected TTS provider must be supplied for each project.
 - **Cover generation:** the cartoon skill uses the host's image-generation skill/tool when available. Image generation is not bundled with this repository. Rendering the cartoon engine itself needs no AI video provider.
 - **Uploading:** a working connected Chrome session signed into the intended account. Browser permissions, account verification, available scheduling controls and upload limits can require user action. No credentials or browser sessions are included.
 - **Defaults:** upload skills target Dinke4Leetcode on YouTube and `@dinke4leetcode` on Instagram, and use IST for requested schedules. Verify the account in the live UI. User instructions override defaults; the skills do not grant standing permission to publish.
@@ -45,6 +47,6 @@ Use $upload-reel to finish my prepared Instagram reel with its caption and hasht
 
 ## Contents and provenance
 
-The three skill directories preserve the installed files, including the cartoon engine, technical example, references, vendor sources and license notices. The bundled soldier story is a technical demonstration, not verified history. See `skills/cartoon-audio-short/references/sources.md` and `kit/vendor/` inside that skill for provenance, pinned source versions, hashes and third-party license terms.
+The skill directories preserve the installed files, including the cartoon engine, technical example, references, vendor sources and license notices. The bundled soldier story is a technical demonstration, not verified history. See `skills/cartoon-audio-short/references/sources.md` and `kit/vendor/` inside that skill for provenance, pinned source versions, hashes and third-party license terms.
 
 Generated reels, narration recordings, upload screenshots, the original kit ZIP, local environments, credentials and unrelated skills are excluded. No new repository-wide license is assigned to third-party code; retain and follow the bundled notices.
