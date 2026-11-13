@@ -1,0 +1,4 @@
+interface:
+  display_name: "Anything Explained"
+  short_description: "Dark UI explainer reels with kinetic text and cards"
+  default_prompt: "Use $anything-explained to turn my topic or narration into a vertical explainer with dark UI cards and kinetic typography."
